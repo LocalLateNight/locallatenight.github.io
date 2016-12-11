@@ -36,7 +36,7 @@ export default class VideoPlayer extends React.Component {
 			return <source key={i} src={src.url} type={src.mime} />
 		})
 		return (
-			<video className="player" controls>
+			<video className="player" poster={this.props.poster} controls>
 				{videoSources}
 				{UNSUPPORTED_VIDEO_MESSAGE}
 			</video>

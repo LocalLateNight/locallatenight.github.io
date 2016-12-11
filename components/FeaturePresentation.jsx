@@ -8,15 +8,14 @@ import VideoPlayer from './VideoPlayer.jsx'
 
 export default class FeaturePresentation extends React.Component {
 	render() {
-		// let videoSrc = {
-		// 	url: 'mov_bbb.mp4',
-		// 	mime: 'video/mp4',
-		//  poster: 'poster.jpg'
-		// }
+		let videoSrc = {
+			url: 'local_sf.mp4',
+			mime: 'video/mp4'
+		}
 		return (
 			<div className="feature-presentation">
 				<ArticleList articles={this.props.articles} />
-				<VideoPlayer type="youtube" youtubeId="JdrdkwnJihQ" />
+				<VideoPlayer type="html5" src={videoSrc} poster={require('../poster.png')} />
 			</div>
 		)
 	}
