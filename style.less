@@ -57,7 +57,7 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	/*height: 39.3vw;*/
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 	height: 40vw;
 
 	.article-preview-list {
@@ -66,6 +66,8 @@ header {
 
 		div.article-preview {
 			display: block;
+			margin-left: auto;
+			margin-right: auto;
 
 			.small-screen({
 				display: inline-block;
@@ -118,6 +120,9 @@ div.segment-title {
 	  filter: invert(85%);
 	}
 }
+video.player {
+	width: 0;
+}
 
 .icon {
 	height: 15px;
@@ -166,13 +171,14 @@ div.article-preview-list {
 	
 
 	div.article-preview {
+		vertical-align: top;
 		/*border: 5px solid @off-white-color;*/
 		/*height: 300px;*/
 		width: 350px;
 		background-color: white;
 		color: black;
 		display: inline-block;
-		margin: 0 auto;
+		margin: 0 20px;
 		padding-bottom: 10px;
 		border-radius: 0 0 10px 10px;
 		text-align: center;
